@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gps_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/gps_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/gps_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/gps_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Switch
+                    android:id="@+id/gps_enabled_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <CheckBox
+                    android:id="@+id/gps_vibrate_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:maxLines="1"
+                    android:text="@string/vibrate" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:id="@+id/gps_radius_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_radius_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/gps_radius_slider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="@integer/gps_max_distance"
+                android:progress="@integer/gps_max_distance" />
+
+            <EditText
+                android:id="@+id/gps_radius_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gps_latitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_latitude_label" />
+
+        <EditText
+            android:id="@+id/gps_latitude_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/gps_longitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_longitude_label" />
+
+        <EditText
+            android:id="@+id/gps_longitude_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/gps_get_coordinates_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/gps_get_coordinates_button" />
+
+    </LinearLayout>
+
+</ScrollView>

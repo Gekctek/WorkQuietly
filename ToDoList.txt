@@ -1,0 +1,21 @@
+*Make different notif bar icon for Recc,OneT,Cal,GPS,QQ and Unquiet
+*Icons for item lists: vibrate,silent,disabled
+*QuickQuiet silent option
+*GPS mapView
+*Preference to have QQ widget pop up when goto vibrate/silent
+
+
+Bugs
+------
+*GPS re-enables/vibrates onResume/unlock
+*FilterView drop down lists don't get current all day events
+
+
+Optional
+--------
+*Drag/Drop events to change position/delete
+*Subsections for work, school, etc...
+*Power efficiency options: brightness, wifi, data....
+*Auto txt message response
+*Preference Select specific calendars
+*Quick Quiet Widget

@@ -1,0 +1,8 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/add" android:title="@string/menu_add" android:showAsAction="always" android:icon="@android:drawable/ic_menu_add" ></item><item android:id="@+id/prefs" android:title="@string/menu_prefs"></item>
+        <item android:id="@+id/deleteActivities" android:title="@string/menu_delete" android:icon="@android:drawable/ic_menu_delete"></item>
+        
+        <item android:id="@+id/quickQuiet" android:title="@string/menu_quick_quiet" android:showAsAction="never|withText"></item>
+        <item android:id="@+id/menu_change_log" android:title="@string/menu_change_log_title" android:showAsAction="never|withText"></item>
+        <item android:id="@+id/whitelist_activity" android:title="Whitelist" android:icon="@android:drawable/ic_menu_add"></item>
+    </menu>

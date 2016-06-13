@@ -1,0 +1,3 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/calendar_filter_save" android:title="Save" android:showAsAction="always|withText" android:icon="@android:drawable/ic_menu_save"></item>
+    </menu>

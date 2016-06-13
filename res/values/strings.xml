@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Work Quietly</string>
+    <string name="pref_vibrate_pattern_title">Vibrate Pattern</string>
+    <string name="pref_vibrate_pattern_summary">Choose the vibration pattern for notifications</string>
+    <string name="pref_enable_app_title">Enable WorkQuietly</string>
+    <string name="pref_enable_app_summary">Enable WorkQuietly</string>
+    <string name="pref_vibrate_notification_title">Vibration</string>
+    <string name="pref_vibrate_notification_summary">Notify by vibration</string>
+    <string-array name="pref_vibrate_pattern_array">
+        <item >Default</item>
+        <item >SOS</item>
+    </string-array>
+    <string name="pref_sound_notification_title">Notification Sound</string>
+    <string name="pref_sound_notification_summary">Enable sound notification</string>
+    <string name="pref_default_activity_length_title">Default Activity Length</string>
+    <string name="pref_default_activity_length_summary">Choose default length of quiet times</string>
+    <string-array name="pref_default_activity_length_array">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string name="pref_stubbornly_quiet_title">Enable Stubbornly Quiet</string>
+    <string name="pref_stubbornly_quiet_summary">Enable StubbornlyQuiet</string>
+    <string name="pref_persistant_notification_title">Persistent Notification</string>
+    <string name="pref_persistant_notfication_summary">Enable persistent notifications</string>
+    <string name="pref_enable_gps_title">Enable GPS</string>
+    <string name="pref_enable_gps_summary">Enable location based silencing</string>
+    <string name="pref_enable_calendar_title">Enable Calendar</string>
+    <string name="pref_enable_calendar_summary">Enable automated calendar events</string>
+    <string name="one_time_date_button_text">Set Date</string>
+    <string name="app_version_name">1.0</string>
+    <string name="app_description">This application enables the phone to automatically go to vibrate or silent ringer modes. Automatic quiet times can be recurring, one time or be based on the Android calendar.</string>
+    <string name="gps_radius_label">Radius:</string>
+    <string name="gps_latitude_label">Latitude</string>
+    <string name="gps_longitude_label">Longitude</string>
+    <string name="gps_get_coordinates_button">Get Coordinates</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_prefs">Preferences</string>
+    <string name="menu_delete">Bulk Delete</string>
+    <string name="menu_excep">Exceptions</string>
+    <string name="menu_quick_quiet">Quick Quiet</string>
+    <string name="remove_activity_delete_button">Delete Selected</string>
+    <string name="quick_quiet_minutes_label">Minutes:</string>
+    <string name="quick_quiet_hours_label">Hours:</string>
+    <string name="quick_quiet_start_button">Start</string>
+    <string name="quick_quiet_minutes_value">0</string>
+    <string name="quick_quiet_hours_value">1</string>
+    <string name="filter_list_item"></string>
+    <string name="gps_name">GPS Name</string>
+    <string name="gps_min_check_time">GPS Min Time Interval (Seconds)</string>
+    <string name="gps_min_check_time_description">Minimum time before checking for new gps location</string>
+    <string name="gps_min_check_distance">GPS Min Distance Interval (Meters)</string>
+    <string name="gps_min_check_distance_description">Minimum distance changed before checking new gps location</string>
+    <string name="about">About</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="notifications">Notifications</string>
+    <string name="ringer">Ringer</string>
+    <string name="gps_enabled_label">Enabled</string>
+    <string name="pref_auto_delete_title">Auto Delete</string>
+    <string name="pref_auto_delete_summary">Automatically delete a One Time event after completion</string>
+    <string name="recurring_name_hint">Activity Name</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="monday_check">M</string>
+    <string name="tuesday_check">T</string>
+    <string name="wednesday_check">W</string>
+    <string name="sunday_check">Su</string>
+    <string name="thursday_check">Th</string>
+    <string name="friday_check">F</string>
+    <string name="saturday_check">Sa</string>
+    <string name="until">Until&#8230;</string>
+    <string name="enabled">Enabled</string>
+    <string name="one_time_name_hint">Activity Name</string>
+    <string name="pref_vibrate_title">Vibration</string>
+    <string name="pref_vibrate_summary"></string>
+    <string name="pref_one_time_title">One Time</string>
+    <string name="pref_stubbornly_quiet_category_title">Stubbornly Quiet (BETA)</string>
+    <string name="pref_gps_category_title">GPS (Beta)</string>
+    <string name="pref_calendar_category_title">Calendar</string>
+    <string name="pref_general_title">General</string>
+    <string name="menu_change_log_title">Change Log</string>
+    <string name="close_button">Close</string>
+    <string name="pref_whitelist_category_title">Whitelist</string>
+    <string name="pref_whitelist_irm_summary">Use volume settings that were set before the quiet event (could be vibrate or silent)</string>
+    <string name="pref_whitelist_always_summary">Use whitelist even when not in a quiet event</string>
+    <string name="pref_whitelist_irm_title">Use Initial Ringer Mode</string>
+    <string name="pref_whitelist_always_title">Always Use Whitelist</string>
+    <string-array name="recurring_types">
+        <item >Single Day</item>
+        <item >Multi Day</item>
+    </string-array>
+        <string name="clock_format">Use 24 hour format</string>
+        <string name="clock_format_summary">Use the international 24 hour clock format instead of the 12 hour format</string>
+        <string name="pref_gps_power_title">Max Location Service Power Usage</string>
+        <string name="pref_gps_power_summary">Set the max amount of power the location services should use. Lower power settings may use network and passive location services instead of gps</string>
+        <string name="auto_response_title">Auto SMS Response</string>
+        <string name="auto_response_summary">If called or messaged during a quiet period, an auto response will be sent via sms.</string>
+        <string name="auto_response_text_title">Auto SMS Response Message</string>
+        <string name="auto_text_response_text_summary">The message that will be in the auto sms response</string>
+        <string name="auto_response_default">I am busy at the moment, I\'ll get back to you</string>
+
+</resources>

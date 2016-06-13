@@ -1,0 +1,159 @@
+Work Quietly Changelog
+
+----------Version 39----------
+5/8/13
+*Misc bug fixes
+
+----------Version 38----------
+3/4/13
+*Added general auto SMS response option to preferences
+
+----------Version 37----------
+3/2/13
+*Minor fixes to GPS
+*Minor GUI changes
+
+----------Version 36----------
+3/1/13
+*Marked GPS events as in Beta state due to inaccuracy and instability
+*Minor fixes to GPS
+
+----------Version 34/35----------
+2/26/13
+*Fixed crashing if user didn't have calendar events
+
+----------Version 33----------
+2/26/13
+*App now checks for upcoming events/refreshes when updated
+
+----------Version 32----------
+2/25/13
+*Fixed calendar events not correctly scheduling all day and repeating events
+
+----------Version 31----------
+2/24/13
+*Calendar and GPS events are enabled by default
+
+----------Version 30----------
+2/24/13
+*Fixed minor crashing bugs
+*Added 24 hour format option
+
+----------Version 29----------
+2/24/13
+*Added a multi-day option recurring events to allow recurring events to span over multiple days
+*Changed GPS events to be able to use network if the phones gps is turned off
+
+----------Version 28----------
+2/23/13
+*Added swiping between tabs feature
+
+----------Version 27----------
+2/23/13
+*Fixed large error with calendar filters not showing drop down lists
+
+----------Version 26----------
+2/22/13
+*Fixed Quick Quiet to end at the correct time
+
+
+----------Version 25----------
+2/22/13
+All features are now unlocked for free for both app versions. 
+Thank you to all that had bought the app.
+
+----------Version 24----------
+2/20/13
+*Misc bug fixes
+
+----------Version 23----------
+2/9/13
+*Improved bulk delete
+
+----------Version 22----------
+2/2/13
+*Release version, out of beta
+*Full features are now available on the pro version
+
+----------Version 21----------
+2/2/13
+*Fixed Stubbornly Quiet not freezing volume
+*Added changelog dialog
+
+----------Version 20----------
+1/28/13
+*Fixed minor issues 
+*GPS list no longer duplicates first item
+*When deleting events or refreshing there are no longer volume change dialogs
+*GPS will be disabled if there are no events
+
+
+----------Version 19----------
+1/26/13
+*Hotfix for no quiet times in non-debug mode
+
+----------Version 18----------
+1/26/13
+*Minor Bug fixes
+*Fixed odd cases in which the device would remain in quiet-mode after an event
+
+----------Version 17----------
+1/13/13
+*OneTime events have changed to be able to do 2 different dates and times
+
+----------Version 16----------
+1/12/13
+*Hotfix for Calendar events crashing
+
+----------Version 15----------
+1/12/13
+*Added Auto Delete preference for One Time activities
+*Fixed bugs with setting One Time times
+*Added remove buttons for calendar sub-filters
+
+----------Version 14----------
+1/11/13
+*Fixed persistent notifications
+*Landscape mode now available on the main screen
+*Added vibrate and enabled checks for GPS and Calendar Events
+*If the ringer is in silent mode, the volume will not change to vibrate mode
+
+----------Version 13----------
+1/8/13
+*Fixed scheduling issues with recurring events
+
+----------Version 12----------
+12/30/12
+*Improvements and fixes to volume freezing and Stubbornly Quiet
+
+----------Version 11----------
+12/29/12
+*Hotfixed events not getting refreshed
+
+----------Version 10----------
+12/29/12
+*Internal changes to prepare for Changes in OneTime
+*Database changes, all data will be reset (Sorry for the inconvenience)
+*Minor bug fixes 
+
+----------Version 9----------
+12/28/12
+*Minor GPS fixes and features added
+
+----------Version 8----------
+* New GPS events are now working and enabled
+* New preferences are added and are enabled
+
+----------Version 7----------
+*Major internal changes for services
+*GPS events can be made, but the service is still disabled 
+
+----------Version 6----------
+*Changed save buttons for ease of use and better looks
+*Made basic GPS menus but is still disabled
+
+----------Version 5----------
+*Hotfixed edit calendar event crash
+
+----------Version 4----------
+*Revamped Calendar Filters to be more user friendly and now includes sub-filters (with and/or)

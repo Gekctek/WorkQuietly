@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0px"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/qqHourBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="24"
+        android:progress="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/qqHourLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/quick_quiet_hours_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/qqHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/quick_quiet_hours_value"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/qqMinBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="59"
+        android:progress="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/qqMinLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_quiet_minutes_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/qqMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_quiet_minutes_value"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/qqStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_quiet_start_button" />
+
+</LinearLayout>

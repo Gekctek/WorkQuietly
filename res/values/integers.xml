@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sdk_min">15</integer>
+    <integer name="sdk_target">15</integer>
+    <integer name="sdk_max">100</integer>
+    <integer name="gps_max_distance">1000</integer>
+    <integer name="gps_min_check_distance">10</integer>
+    <integer name="gps_min_check_time">10</integer>
+</resources>

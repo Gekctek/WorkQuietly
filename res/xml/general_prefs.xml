@@ -1,0 +1,31 @@
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="@string/pref_general_title"><CheckBoxPreference android:title="@string/pref_enable_app_title" android:summary="@string/pref_enable_app_summary" android:key="enableWQ" android:enabled="true" android:defaultValue="true" /><CheckBoxPreference android:key="notifPersist" android:title="@string/pref_persistant_notification_title" android:summary="@string/pref_persistant_notfication_summary" android:enabled="true" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/clock_format" android:key="clockFormat" android:summary="@string/clock_format_summary" android:enabled="true" android:defaultValue="false"/>
+        <CheckBoxPreference android:key="autoResponse" android:title="@string/auto_response_title" android:summary="@string/auto_response_summary" android:defaultValue="false"/>
+        <EditTextPreference android:title="@string/auto_response_text_title" android:key="autoResponseText" android:dependency="autoResponse" android:summary="@string/auto_text_response_text_summary" android:defaultValue="@string/auto_response_default"/>
+</PreferenceCategory><PreferenceCategory android:title="@string/pref_one_time_title"><CheckBoxPreference android:key="enableAutoDelete" android:title="@string/pref_auto_delete_title" android:summary="@string/pref_auto_delete_summary" android:defaultValue="true" android:enabled="true" /></PreferenceCategory><PreferenceCategory android:title="@string/pref_calendar_category_title"><CheckBoxPreference android:key="enableCal" android:title="@string/pref_enable_calendar_title" android:summary="@string/pref_enable_calendar_summary" android:enabled="true" android:defaultValue="true" /></PreferenceCategory>
+        <PreferenceCategory android:summary="@string/pref_vibrate_summary" android:title="@string/pref_vibrate_title"><CheckBoxPreference android:key="notifVib" android:title="@string/pref_vibrate_notification_title" android:summary="@string/pref_vibrate_notification_summary" android:enabled="true" android:defaultValue="true" /><ListPreference android:title="@string/pref_vibrate_pattern_title" android:key="vibPattern" android:summary="@string/pref_vibrate_pattern_summary" android:enabled="false" android:dependency="notifVib" /></PreferenceCategory>
+        
+        <PreferenceCategory android:title="@string/pref_stubbornly_quiet_category_title"><CheckBoxPreference android:title="@string/pref_stubbornly_quiet_title" android:summary="@string/pref_stubbornly_quiet_summary" android:key="enableSQ" android:enabled="true" android:defaultValue="false" /><EditTextPreference android:key="timerSQ" android:inputType="number" android:title="Stubbornly Quiet Timeout" android:summary="Time before the Stubbornly Quiet cancels volume change " android:defaultValue="10" android:dependency="enableSQ" /></PreferenceCategory>
+        
+        
+        <PreferenceCategory android:title="@string/pref_gps_category_title"><CheckBoxPreference android:key="enableGPS" android:title="@string/pref_enable_gps_title" android:summary="@string/pref_enable_gps_summary" android:enabled="true" android:defaultValue="true" /><EditTextPreference android:key="gpsMinCheckTime" android:inputType="number" android:title="@string/gps_min_check_time" android:summary="@string/gps_min_check_time_description" android:defaultValue="@integer/gps_min_check_time" android:dependency="enableGPS" /><EditTextPreference android:key="gpsMinCheckDistance" android:inputType="number" android:title="@string/gps_min_check_distance" android:summary="@string/gps_min_check_distance_description" android:defaultValue="@integer/gps_min_check_distance" android:dependency="enableGPS" />
+        <ListPreference android:key="gpsPower" android:entryValues="@array/gps_power_values" android:summary="@string/pref_gps_power_summary" android:title="@string/pref_gps_power_title" android:entries="@array/gps_power_names" android:defaultValue="3"/>
+</PreferenceCategory>
+        
+        
+        <PreferenceCategory android:title="@string/pref_whitelist_category_title">
+            <CheckBoxPreference android:key="whitelistIRM" android:summary="@string/pref_whitelist_irm_summary" android:title="@string/pref_whitelist_irm_title" android:defaultValue="false"/>
+            <CheckBoxPreference android:key="alwaysUseWhitelist" android:summary="@string/pref_whitelist_always_summary" android:title="@string/pref_whitelist_always_title" android:defaultValue="false"/>
+        </PreferenceCategory><Preference android:title="@string/about" android:key="about"/>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </PreferenceScreen>

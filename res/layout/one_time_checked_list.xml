@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.Gekctek.WorkQuietly.OneTimeTextView
+        android:id="@+id/one_time_item_check"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:checkMark="?android:attr/textCheckMark"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip">
+	</com.Gekctek.WorkQuietly.OneTimeTextView>
+</RelativeLayout>

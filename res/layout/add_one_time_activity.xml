@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/one_time_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/one_time_name_hint" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="right" >
+
+            <CheckBox
+                android:id="@+id/one_time_vibrate_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:text="@string/vibrate" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/one_time_start_calendar_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <CalendarView
+                    android:id="@+id/one_time_start_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/one_time_start_button"
+                    android:layout_width="122dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:text="@string/start_time" />
+
+                <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+                    android:id="@+id/one_time_start_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startTimeRangeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/until"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/one_time_end_button"
+                    android:layout_width="122dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:text="@string/end_time" />
+
+                <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+                    android:id="@+id/one_time_end_clock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/one_time_end_calendar_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <CalendarView
+                    android:id="@+id/one_time_end_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/one_time_name_hint" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:baselineAligned="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Switch
+                    android:id="@+id/enabled_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/vibrate_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/vibrate" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repeat:"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/repeat_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/one_time_start_calendar_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/start_days_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/start_time_button"
+                android:layout_width="122dp"
+                android:layout_height="48dp"
+                android:text="@string/start_time" />
+        </LinearLayout>
+
+        <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+            android:id="@+id/start_clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/startTimeRangeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/until"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/end_time_button"
+                android:layout_width="122dp"
+                android:layout_height="48dp"
+                android:text="@string/end_time" />
+
+            <Spinner
+                android:id="@+id/end_days_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+            android:id="@+id/end_clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</ScrollView>

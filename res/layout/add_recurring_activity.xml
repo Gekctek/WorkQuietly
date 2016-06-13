@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/activityName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/recurring_name_hint" >
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:baselineAligned="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Switch
+                    android:id="@+id/setEnabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/vibrateCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/vibrate" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/startTimeRangeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/startTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/start_time" />
+
+            <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+                android:id="@+id/startTimeClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/until"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+
+
+            <com.Gekctek.WorkQuietly.ChangeableAnalogClock
+                android:id="@+id/endTimeClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dial="@drawable/clock_dial" android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/endTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/end_time" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/daysRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center" >
+
+            <CheckBox
+                android:id="@+id/monCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/monday_check" />
+
+            <CheckBox
+                android:id="@+id/tuesCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tuesday_check" />
+
+            <CheckBox
+                android:id="@+id/wedCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/wednesday_check" />
+
+            <CheckBox
+                android:id="@+id/thursCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/thursday_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daysRow2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <CheckBox
+                android:id="@+id/friCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/friday_check" />
+
+            <CheckBox
+                android:id="@+id/satCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/saturday_check" />
+
+            <CheckBox
+                android:id="@+id/sunCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/sunday_check" />
+            
+            <CheckBox
+                android:id="@+id/fillerCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/saturday_check"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
